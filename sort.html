@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+</head>
+<body>
+    <p>a=</p><p id="a"></p>
+    <p>b=</p><p id="b"></p>
+    <script>
+       let a=prompt("enter a :");
+       let b=prompt("enter b :");
+       let c;
+       c=a;
+       a=b;
+       b=c;
+       console.log("a="+a);
+       console.log("b="+b);
+       document.getElementById("a").innerHTML=a;
+       document.getElementById("b").innerHTML=b;
+    </script>
+</body>
+</html>

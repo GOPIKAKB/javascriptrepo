@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+    <form name="myform" action="demo.html" methode="post" onsubmit="return validation()">
+    Name:<input type="text" name="perosonname"><br>
+    Password:<input type="password" name="password">
+    <button type="submit" >submit</button>
+    </form>
+
+<script>
+    function validation(){
+        let name=myform.perosonname.value
+        let pswd=myform.password.value
+
+        if(name==null ||  name ==""){
+            alert("name cannot be null")
+            return false
+        }
+        if(pswd.length<6)
+        alert("password must atleast 6 charecter")
+        return false
+    }
+
+</script>
+</body>
+</html>

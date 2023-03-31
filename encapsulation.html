@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Encapsulation</title>
+</head>
+
+<body>
+    <script>
+        class student {
+            constructor() {
+                var name;
+                var mark;
+            }
+            getName() { return this.name; }
+            setName(name) { this.name = name; }
+            getMark() { return this.mark; }
+            setMark(mark) { this.mark = mark }
+
+        }
+
+        var newStud= new student()
+        newStud.setName('gopika')
+        newStud.setMark(45)
+        document.write(newStud.getName()+""+newStud.getMark())
+    </script>
+</body>
+
+</html>

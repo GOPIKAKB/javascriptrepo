@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class welcome{
+            show(){
+                document.write("welcome")
+            }
+        }
+        class by extends welcome {
+            show(){
+                document.write("bye")
+            }
+        }
+
+        const newwlcm = new welcome
+        newwlcm.show()
+
+        const nwby = new by
+        nwby.show()
+    </script>
+    
+</body>
+</html>

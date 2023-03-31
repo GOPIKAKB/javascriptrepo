@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+</head>
+
+<body>
+    <script>
+        // const arr=["apple","orenge","mango"];
+        // console.log(arr);
+        // console.log(...arr);
+
+        //copy array
+        // const num1=["one","two","three"]
+        // const num2=[...num1,"four","five"]
+        // console.log(num1)
+        // console.log(num2)
+
+//array push
+
+        // const arr1=[1,2,3,4]
+        // const arr2 = arr1
+        // arr1.push(5)
+        // console.log(arr1)
+        // console.log(arr2)
+
+        // const arr3=[10,20,30,40]
+        // const arr4=[...arr3]
+        // arr3.push(50)
+        // arr3.pop()
+        // console.log(arr3)
+        // console.log(arr4)
+
+ //spread operator in object
+
+        // const obj1={a:10,b:20}
+        // const obj2={c:30}
+        // const obj3={...obj1,...obj2}
+        // console.log(obj3)
+
+        // const car1={
+        //     name:"i20",
+        //     brand:"hundai",
+        //     color:"red"
+        // }
+        // const car2={
+        //     year:2021,
+        //     color:"green",
+        //     number:2345
+        // }
+        // const car3={...car1,...car2}
+        // console.log(car3)
+
+//spread operator in function
+
+        function test1(a, b) {
+            console.log(a, b)
+        }
+        test1(2, 4, 6, 9)
+//spread operator when passed as an argument in function is known as rest parameter
+        function test2(a, b, ...test) {
+            console.log(a, b, ...test)
+            console.log(a, b, test)
+        }
+        test2(2, 4, 6, 9)
+
+        function test3(...test) {
+            console.log(test)
+            console.log(...test)
+        }
+        test3(2, 4, 6, 9)
+    </script>
+</body>
+
+</html>
